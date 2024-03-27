@@ -24,7 +24,7 @@ const Home = ({ data, handleButtonClick }) => {
     <small className="w-[300px] mt-12 ml-6 text-[16px] font-thin tracking-widest  md:mt-40  md:ml-[10rem] md:w-[450px] md:tracking-[16px]  lg:ml-[4rem]  2xl:text-2xl text-lightgray ">
       NEW PRODUCT
     </small>
-    <h1 className="w-80 text-[32px] mt-6 sm:ml-1 ml-10 tracking-[8.3px] uppercase text-3xl md:text-[56px] md:ml-0  md:w-[400px] md:leading-[4rem] md:tracking-[2px] lg:ml-16  lg:w-[25rem]  font-bold  2xl:text-5xl ">
+    <h1 className="w-80 text-[32px] mt-6 sm:ml-1 ml-10 tracking-[8.3px] uppercase text-3xl md:text-[56px] md:ml-0  md:w-[400px] md:leading-[4rem] md:tracking-[2px] lg:ml-16  lg:w-[25rem]  font-bold  2xl:text-5xl">
       XX99 Mark II Headphones
     </h1>
     <p className="font-medium w-80 mt-12  text-center text-[15px] tracking-wider leading-6  md:w-[400px] md:text-center md:mt-12 md:-ml-2 md:leading-7  lg:tracking-wide  lg:ml-16 lg:text-start lg:w-[360px]  2xl:text-[24px] 2xl:md:w-[400px] 2xl:leading-8 ">
