@@ -1,0 +1,95 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+  font-family: 'Manrope', sans-serif;
+  width: 100vw;
+  border: 10px;
+}
+
+.gallerySection{
+  background-image: url("../resources//assets/home/desktop/pattern-circles.svg");
+}
+
+.divider {
+ border-bottom: .2px solid #979797;
+ width: 100%;
+
+}
+
+.herosection {
+  background-repeat: no-repeat;
+  background-size: 100%  100%;
+  margin-bottom: 2.5}
+
+
+
+  @media screen and (min-width: 768px) {
+.herosection{background-position: center !important;
+  background-size: cover;
+  margin-bottom: 6rem;}
+
+  .divider {
+    border-bottom: .2px solid #979797;
+    width: 75%;
+    margin: 0 auto;
+   
+  }
+    
+  }
+  @media screen and (min-width: 1024px) {
+    
+  .divider {
+    border-bottom: .2px solid #979797;
+    width: 70%;
+    margin: 0 auto;
+   
+  }
+
+  .icon-size {
+    width: 40px; /* Default size */
+    height: 20px; /* Adjust if needed */
+    margin-top: 20px;
+  }
+  }
+
+
+  @media screen and (min-width: 1280px) {
+    .herosection{
+      background-position: 0 100% !important;
+      margin-bottom: 7.5rem;
+    }
+ 
+    .divider {
+      border-bottom: .2px solid #979797;
+      width: 70%;
+      margin: 0 auto;
+     
+    }
+  }
+  @media screen and (min-width: 1500px) {
+  
+ 
+    .divider {
+      border-bottom: .2px solid #979797;
+      width: 62%;
+      margin-left: 28rem;
+     
+    }
+
+    .icon-size {
+      width: 40px; /* Default size */
+      height: 20px; /* Adjust if needed */
+      margin-top: 20px;
+    }
+   
+  }
+
+
+
