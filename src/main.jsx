@@ -7,7 +7,7 @@ import store from "./store/store.js";
 
 import "./index.css";
 
-// Import your custom font family
+
 const theme = extendTheme({
   fonts: {
     body: "'Manrope', sans-serif",

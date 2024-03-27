@@ -38,12 +38,12 @@ const Checkout = () => {
     city: "",
     country: "",
     paymentMethod: "e-money",
-    eMoneyNumber: "", // Initialize with an empty string
-    eMoneyPin: ""     // Initialize with an empty string
+    eMoneyNumber: "", 
+    eMoneyPin: ""     
   });
-  const [isModalOpen, setIsModalOpen] = useState(false); // State to manage modal visibility
+  const [isModalOpen, setIsModalOpen] = useState(false); 
   const cartItems = useSelector((state) => state.carts.cartItems);
-  const [selectedItem] = useState(cartItems[0]); // Selecting the first item in the cart
+  const [selectedItem] = useState(cartItems[0]); 
 
   const handleInputChange = (e) => {
     if (e && e.target) {
@@ -56,14 +56,14 @@ const Checkout = () => {
   };
 
   const handleContinueAndPay = () => {
-    setIsModalOpen(true); // Open the modal when "Continue and Pay" is clicked
-  };
+    setIsModalOpen(true); 
+    };
   const totalPrice = cartItems.reduce(
     (total, item) => total + item.price * item.quantity,
     0
   );
   
-   // Format total price with commas
+  
    const formattedTotalPrice = totalPrice.toLocaleString();
 
   const shipping =parseInt(50)
