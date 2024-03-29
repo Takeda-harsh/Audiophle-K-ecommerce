@@ -15,7 +15,7 @@ const BestGear = () => {
 
   return (
     <Box mt={{base:"15rem",md:"12rem",lg:"14"}} mb={{base:"80",md:"2",lg:"80"}} className="px-3 ml-5 lg:grid lg:grid-cols-2 lg:h-80  xl2:h-96 w-[90%] md:w-[94%] lg:w-[95%]  md:relative  md:-left-[3rem] lg:-left-[10rem] ">
-      {/* Image Section */}
+    
       <img
         src={
           window.innerWidth < 480
@@ -28,7 +28,7 @@ const BestGear = () => {
         className=" rounded-md md:h-[20rem] md:ml-12 md:w-full lg:h-[588px]  lg:order-2 order-1  lg:w-[400px] lg:ml-[14rem] xl:ml-[13.5rem] xl:w-[460px] xl2:mt-16  xl2:ml-[15rem] 2xl:px-0 2xl:ml-[18.5rem] 2xl:w-[850px] 2xl:h-[888px] "
       />
 
-      {/* Text Section */}
+    
       <Center>
         <Box>
           <Box mt={{base:'4', md:'8'}} fontWeight="extrabold" as="h4" className="lg:order-1 lg:ml-48 md:ml-14 xl:ml-[26rem] xl2:-ml-10 ">

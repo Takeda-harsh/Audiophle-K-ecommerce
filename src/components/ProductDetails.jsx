@@ -34,27 +34,27 @@ const ProductDetailsPage = ({ product, handleButtonClick }) => {
   const cartCount = useSelector((state) => state.carts?.count ?? 0);
 
   useEffect(() => {
-    // Reset count when component unmounts
+    
     return () => {
       dispatch(resetCartCount());
     };
   }, [dispatch]);
 
-  // Fetch selected product based on slug when component mounts
+  
   useEffect(() => {
     const selectedProduct = productName
       ? product?.find((p) => p.name === productName)
       : product?.find((p) => p.slug === slug);
     setSelected(selectedProduct);
-    // console.log(`selected in details `, selectedProduct);
+    
   }, [product, productName, slug]);
 
-  // Check if the selected product exists
+  
   if (!selected) {
     return <div>Product not found.</div>;
   }
 
-  // Destructure product properties
+  
   const {
     others,
     gallery,
@@ -74,7 +74,7 @@ const ProductDetailsPage = ({ product, handleButtonClick }) => {
     }
   };
 
-  // Destructure gallery images
+  
   const { first, second, third } = gallery || [];
 
   const handleDecrease = () => {
@@ -82,7 +82,7 @@ const ProductDetailsPage = ({ product, handleButtonClick }) => {
   };
   const handleIncrease = () => {
     dispatch(increaseCart());
-    // dispatch(addToCart(selected));
+    
   };
 
   const handleAddtoCart = () => {
@@ -107,7 +107,7 @@ const ProductDetailsPage = ({ product, handleButtonClick }) => {
           className="px-3 ml-4   relative  lg:grid lg:grid-cols-2 lg:h-[26rem] xl2:h-[588px] w-[92%]  lg:w-[65%] lg:-ml-20 xl:w-[80%] xl:h-[32rem] xl2:w-[70%] xl:ml-16 "
         >
           <Box className="md:w-full lg:w-[900px] xl:w-[800px] ">
-            {/* Image Section */}
+            
             <Stack flexDir={{ base: "column", md: "row" }}>
               <Center>
                 <Image
@@ -125,7 +125,7 @@ const ProductDetailsPage = ({ product, handleButtonClick }) => {
                 />
               </Center>
 
-              {/* Text Section */}
+              
               <Box flex={{ base: "0"}} mr={{ base: "0", lg: "1" }} className="lg:relative lg:left-32 xl2:left-[20rem]">
                 <Center>
                   <Box flexDir={{ base: "column"}}>
@@ -277,7 +277,7 @@ const ProductDetailsPage = ({ product, handleButtonClick }) => {
                       </li>
                     ))
                   ) : (
-                    <li>No information available.</li>
+                    <li>Not available.</li>
                   )}
                 </ul>
               </Box>
@@ -291,7 +291,7 @@ const ProductDetailsPage = ({ product, handleButtonClick }) => {
            
           >
             <Stack >
-              {/* Gallery images */}
+              
               {[first, second].map((gallery, index) => (
                 <Image
                   key={index}
@@ -310,7 +310,7 @@ const ProductDetailsPage = ({ product, handleButtonClick }) => {
               ))}
             </Stack>
             <Stack>
-              {/* Gallery images */}
+              
               {[third].map((gallery, index) => (
                 <Image
                   key={index}
@@ -322,7 +322,7 @@ const ProductDetailsPage = ({ product, handleButtonClick }) => {
                   sizes="(max-width: 480px) 480px,
                (max-width: 800px) 800px
                1200px"
-                  src={gallery?.desktop || categoryImage.desktop} // Use desktop image by default
+                  src={gallery?.desktop || categoryImage.desktop} 
                   alt={`Gallery Image ${index + 3}`}
                   className="mt-4  md:-ml-12  md:min-h-[26.5rem]  md:min-w-[15.5rem] lg:min-h-[34rem] lg:w-[30rem]  xl2:ml-8"
                 />

@@ -70,7 +70,7 @@ const Gallery = ({handleButtonClick}) => {
                     : speaker.image
                 }
                 alt={speaker.name}
-                className="mb-2 w-40 md:w-50 relative md:top-[2rem] lg:top-[1.5rem] lg:w-[600px] xl:-left-8 xl:top-[8.5rem] xl2:-left-[1rem]  2xl:-left-[10rem] xl2:top-[3.4rem] 2xl:top-[9rem] "
+                className="mb-2 w-40 md:w-50 relative md:top-[2rem] lg:top-[1.5rem] lg:w-[600px] xl:-left-8 xl:top-[8.5rem] xl2:-left-[1rem] xl2:top-[3.4rem] x15:w-[400px] x15:h-60"
               />
             </div>
 
